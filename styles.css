@@ -1,0 +1,400 @@
+html{
+    font-family:'Nunito Sans', sans-serif;
+    min-height: auto;
+    max-width:1280px;
+    background-color: white;
+    margin: 0 auto;
+   
+}
+
+body{
+    margin: 0px !important;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    padding-bottom: 20px;
+    
+}
+.container{
+
+    margin-bottom: 50px;
+
+}
+.header{
+    height:auto;
+
+}
+
+nav{
+    background-color:#222222;
+    display:flex;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height:auto;
+}   
+
+ .logo{
+    display:flex;
+    align-items: center;
+    
+}
+nav .logo  img{
+    width: 2rem;
+    height:2rem;
+    border-radius:50%;
+    padding: 8px;
+}
+
+nav .logo .title {
+    color:white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 8px;
+    flex-wrap:wrap;
+    
+}
+
+nav ul li {
+    padding: 2rem 2rem;
+    /* font-size: 20px; */
+    color:white;
+    background-color: #333333;
+    
+}
+nav ul li.active{
+    background-color: #222222;
+}
+
+nav ul li:hover {
+    background-color: #6e6b6b;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    background-image: url(https://picsum.photos/seed/picsum/900/450);
+    background-size: cover;
+    background-color: #333333;
+    text-align: center;
+    
+    
+}
+@keyframes appear {
+    from{
+        opacity:0.0;
+        top:-100px;
+    }
+    to{
+        opacity: 1.0;
+        top: 0.0;
+
+    }
+}
+
+.banner .heading {
+    flex:1;
+    justify-self: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    position:relative;
+    animation: appear 1s ease-in-out 0s forwards;
+}
+.banner .heading small {
+    font-size: 24px;
+}
+
+.maintext {
+    padding: 12px;
+    font-size: 18px;
+}
+
+.subtext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subtext div {
+    width: 280px;
+    border-radius: 10px;
+    margin: 10px;
+    padding:20px;
+    color:white;
+}
+.subtext .subtext-1 {
+    background-color: lightcoral; 
+}
+
+.subtext .subtext-2 {
+    background-color: rgb(255, 217, 0);
+
+}
+
+.subtext .subtext-3 {
+    background-color: yellowgreen;
+}
+
+.quote {
+    display:block;
+    background-color: #eeeeee;
+    text-align: center;
+    padding:20px;
+    margin:10px;
+    font-style: italic;
+}
+
+
+.quote::before {
+    display: inline-block;
+    content: open-quote;
+    font-size: 24px;
+    color: #d3d3d3;
+}
+.quote::after {
+    display: inline-block;
+    content: close-quote;
+    font-size: 24px;
+    color: #d3d3d3;
+}
+
+h3.title{
+    font-size: 24px;
+    padding: 12px;
+    margin:6px;
+    border-top: 5px solid #e4e1e1;
+    border-bottom: 5px solid #e4e1e1;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.projects .project {
+    flex-basis: 300px;
+    padding: 20px;
+    border: 1px solid #c9c3c3;
+    margin: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+.projects .project img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
+.project h4 {
+    font-size: 20px;
+    padding: 12px;
+    margin:6px;
+    border-top: 5px solid #e4e1e1;
+    border-bottom: 5px solid #e4e1e1;
+}
+.project button {
+    background-color: rgb(25, 156, 25);
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    border: 0px;
+    font-size: 12px;
+    transition: all 0.5s ease-out;
+    
+}
+.project button:hover {
+    background-color: rgb(87, 167, 89);
+    color: black;
+}
+
+.footer{
+    position: fixed;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-color: #222222;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    
+    
+}
+
+
+
+/* #about */
+.blank {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fr);
+    text-align: center;
+    grid-gap:20px;
+    
+    
+}
+
+.blank .grey {
+    background-color: rgb(236, 233, 233);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: start;
+    padding: 20px;
+    padding-left: 50px;
+
+    
+}
+
+.follow {
+    background-color: #f5eded;
+    padding:90px;
+    text-align: end;
+}
+.follow a {
+    text-decoration: none;
+    color: black;
+}
+
+.touch {
+    text-align: start;
+    padding: 90px;
+    padding-top: 50px;
+    
+}
+
+td input {
+    width:100%;
+    border:none;
+    background-color: #d3d3d3;
+    
+    margin-top: 20px;
+}
+
+td textarea {
+    width:100%;
+    border:none;
+    background-color: #d3d3d3;
+    margin-top: 20px;
+}
+
+td button {
+    border: none;
+    background-color: #6e6b6b;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.lightgrey {
+    height:20vw;
+    width: 20vw;
+    background-color: #e0d7d7;
+    position: relative;
+    bottom: 125vh;
+    
+    left:33%;
+    
+}
+
+/* #contact */
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
+    background-color: #f2f2f2;
+    align-self: center;
+    padding: 20px;
+    gap:20px;
+}
+
+.address {
+    background-color: #b66969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    
+}
+
+.address div {
+    border: 2px solid #222222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media all and (max-width:800px) {
+    nav{
+        justify-content: flex-start;
+    }
+    nav ul {
+        justify-content: space-between;
+    }
+
+}
+
+@media all and (max-width:600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+       
+       
+
+       
+}
